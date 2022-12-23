@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-23T13:28:16 IST" name="Default suite" finished-at="2022-12-23T13:28:27 IST" duration-ms="11090">
+    <groups>
+    </groups>
+    <test started-at="2022-12-23T13:28:16 IST" name="Default test" finished-at="2022-12-23T13:28:27 IST" duration-ms="11090">
+      <class name="Regression.TestXpath">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Regression.TestXpath@302fec27]" started-at="2022-12-23T13:28:16 IST" name="setup" finished-at="2022-12-23T13:28:16 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="main1()[pri:0, instance:Regression.TestXpath@302fec27]" started-at="2022-12-23T13:28:16 IST" name="main1" finished-at="2022-12-23T13:28:27 IST" duration-ms="10904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main1 -->
+      </class> <!-- Regression.TestXpath -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
