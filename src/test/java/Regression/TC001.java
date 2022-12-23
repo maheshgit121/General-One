@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -21,21 +21,29 @@ public class TC001 {
 	
 	public static Logger log = LogManager.getLogger(TC001.class);
 	public static ExtentReports extent = new ExtentReports();
-	public static ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
+	public static ExtentSparkReporter spark; 
 	public static ExtentTest et;
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");  
+	LocalDateTime now = LocalDateTime.now(); 
 	
 	@BeforeClass 
 	public void setup()
 	{
 		extent.attachReporter(spark);
 	}
+	
+	@BeforeClass
+	public void reportname()
+	{
+		String DateFormat=dtf.format(now);
+		spark = new ExtentSparkReporter("reports/ReportOn"+DateFormat+".html"); //creates html report to print the logs created by extent reports
+	}
 	 
 	
 	public String screenshotone(WebDriver d)
 	{
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");  
-		   LocalDateTime now = LocalDateTime.now(); 
-		   String currentDirectory=System.getProperty("user.dir");
+		
+		String currentDirectory=System.getProperty("user.dir");
 		TakesScreenshot scrShot =((TakesScreenshot)d);
 		String DateFormat=dtf.format(now);
 		String className = this.getClass().getName();
