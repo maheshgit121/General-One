@@ -5,6 +5,7 @@
     <classes>
       <class name="Regression.TestXpath">
         <methods>
+          <include name="reportname"/>
           <include name="setup"/>
           <include name="main1"/>
         </methods>
