@@ -26,8 +26,8 @@ public class TestXpath extends TC001 {
     	ChromeOptions options = new ChromeOptions();
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
     	d= new ChromeDriver(options);
-    	//d.get("https://automationexercise.com/login");
-    	d.get("https://devwcs3.frontgate.com/personalized-recipe-board/1107822?searchTerm=159147");
+    	d.get("https://automationexercise.com/login");
+    	//d.get("https://devwcs3.frontgate.com/personalized-recipe-board/1107822?searchTerm=159147");
     	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     	d.manage().window().maximize();
     	l.debug("Setup is successfull");
@@ -114,10 +114,10 @@ public class TestXpath extends TC001 {
     {
     	TestXpath t = new TestXpath();
     	t.set();
-    	//t.login();
-    	t.fileUploadTest();
+    	t.login();
+    	//t.fileUploadTest();
     	//t.JavaScriptExecutorTest();
-    	//t.VerifyLoginError();
+    	t.VerifyLoginError();
     	t.quit();
     	
     	

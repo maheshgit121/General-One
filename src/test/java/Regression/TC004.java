@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.testng.annotations.Test;
+
 public class TC004 {
 	
 	File f;
@@ -43,7 +45,8 @@ public class TC004 {
 		
 	}
 	
-	public static void main(String[] args)
+	@Test
+	public static void main1()
 	{
 		TC004 t = new TC004();
 		

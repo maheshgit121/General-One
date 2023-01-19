@@ -12,11 +12,12 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
 
 public class TC003 {
 	
-	
-	public static void main(String[] args)throws Exception {
+	@Test
+	public static void main2()throws Exception {
 	      //Create Blank workbook
 	      XSSFWorkbook workbook = new XSSFWorkbook(); 
 	      XSSFSheet sheet = workbook.createSheet("Employee");
