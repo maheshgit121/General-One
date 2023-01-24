@@ -3,10 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Regression.TestXpath"/>
       <class name="Regression.TC002"/>
       <class name="Regression.TC003"/>
       <class name="Regression.TC004"/>
+       <class name="Regression.TestXpath"/>
+      <class name="Regression.TC006"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

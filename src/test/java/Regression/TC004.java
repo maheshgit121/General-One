@@ -7,7 +7,9 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-public class TC004 {
+import com.aventstack.extentreports.Status;
+
+public class TC004 extends TC001 {
 	
 	File f;
 	FileOutputStream o;
@@ -41,7 +43,8 @@ public class TC004 {
 			e.printStackTrace();
 		}
 		
-		
+		extent.createTest(this.getClass().getName()).log(Status.PASS,"Excel file creation is Successfull");
+		extent.flush();
 		
 	}
 	

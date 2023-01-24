@@ -1,44 +1,15 @@
 package Regression;
 
-
-import java.time.Duration;
-
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
-
 public class TestXpath extends TC001 {
 	
-	WebDriver d;
-	Logger l = LogManager.getLogger(TestXpath.class);
-	
-    public void set() throws InterruptedException
-    {   
-    	ChromeOptions options = new ChromeOptions();
-    	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
-    	d= new ChromeDriver(options);
-    	d.get("https://automationexercise.com/login");
-    	//d.get("https://devwcs3.frontgate.com/personalized-recipe-board/1107822?searchTerm=159147");
-    	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-    	d.manage().window().maximize();
-    	l.debug("Setup is successfull");
-    	
-    }
     
-    public void quit()
-    {
-    	d.quit();
-    	l.debug("Quit is successfull");
-    }
+
     
     public void login()
     {
@@ -49,6 +20,7 @@ public class TestXpath extends TC001 {
     		d.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[1]/div[1]/form[1]/input[2]")).sendKeys("maheshcharaj@gmail.com");
     		d.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[1]/div[1]/form[1]/input[3]")).sendKeys("Test@123");
     		d.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+    		log.info("Login is Successful");
     	}
     }
     
@@ -57,7 +29,7 @@ public class TestXpath extends TC001 {
     		
     	    
     		Assert.assertTrue(d.findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect!')]")).isDisplayed(), "Login Failed");
-    		l.debug("Login failed verification is successful");
+    		log.debug("Login failed verification is successful");
     		extent.createTest("MyFirstTestXpath").log(Status.FAIL,"Login Verification was successful").addScreenCaptureFromPath(this.screenshotone(d));
     		extent.flush();
     		
@@ -113,6 +85,7 @@ public class TestXpath extends TC001 {
     public  void main1() throws InterruptedException
     {
     	TestXpath t = new TestXpath();
+    	t.setlogger(this.getClass().getName());
     	t.set();
     	t.login();
     	//t.fileUploadTest();

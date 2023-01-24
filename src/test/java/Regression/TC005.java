@@ -2,12 +2,16 @@ package Regression;
 
 import org.testng.annotations.Test;
 
-public class TC005 {
+import com.aventstack.extentreports.Status;
+
+public class TC005 extends TC001 {
 	
 	@Test
 	public void TC005()
 	{
 		System.out.println("Execution of Test5");
+		extent.createTest(this.getClass().getName()).log(Status.PASS,"TC005 is Successfull");
+		extent.flush();
 	}
 	
 	
