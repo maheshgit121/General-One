@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Regression.TestXpath">
+      <class name="Regression.TC006">
         <methods>
-          <include name="setup"/>
-          <include name="main1"/>
+          <include name="initialisation"/>
+          <include name="signup"/>
+          <include name="reportname"/>
         </methods>
-      </class> <!-- Regression.TestXpath -->
+      </class> <!-- Regression.TC006 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

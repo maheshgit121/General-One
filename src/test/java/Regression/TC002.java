@@ -1,17 +1,26 @@
 package Regression;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 public class TC002 extends TC001 {
 	
+	@BeforeClass
+	public void setlog()
+	{
+		this.setlogger(this.getClass().getName());
+	}
+	
+	
 	@Test
 	public void logtest()
 	{
 		
 		System.out.println("Test First Method execution is passed");
+		System.out.println(browser1);
 		log.debug("Log of First method");
-		extent.createTest("MyFirstTest").log(Status.PASS, "Test First Method execution is passed - Report logging!");
+		extent.createTest(this.getClass().getName()).log(Status.PASS, "Test First Method execution is passed - Report logging!");
 		extent.flush();
 	}
 	
@@ -21,7 +30,7 @@ public class TC002 extends TC001 {
 		
 		System.out.println("Test Second Method execution is passed");
 		log.debug("Log of Second method");
-		extent.createTest("MyFirstTest").log(Status.PASS, "Test Second Method execution is passed - Report logging!");
+		extent.createTest(this.getClass().getName()).log(Status.PASS, "Test Second Method execution is passed - Report logging!");
 		extent.flush();
 	}
 	
@@ -32,7 +41,7 @@ public class TC002 extends TC001 {
 		
 		System.out.println("Test Third Method execution is passed");
 		log.debug("Log of Third method");
-		extent.createTest("MyFirstTest").log(Status.PASS, "Test Third Method execution is passed - Report logging!");
+		extent.createTest(this.getClass().getName()).log(Status.PASS, "Test Third Method execution is passed - Report logging!");
 		extent.flush();
 	}
 	
@@ -43,7 +52,7 @@ public class TC002 extends TC001 {
 		
 		System.out.println("Test Four Method execution is passed");
 		log.debug("Log of Four method");
-		extent.createTest("MyFirstTest").log(Status.PASS, "Test Four Method execution is passed - Report logging!");
+		extent.createTest(this.getClass().getName()).log(Status.PASS, "Test Four Method execution is passed - Report logging!");
 		extent.flush();
 	}
 	

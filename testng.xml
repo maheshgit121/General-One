@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Regression">
     <classes>
       <class name="Regression.TC002"/>
-      <class name="Regression.TestXpath"/>
+      <class name="Regression.TC003"/>
+      <class name="Regression.TC004"/>
+      <class name="Regression.TC005"/>
+       <class name="Regression.TestXpath"/>
+      <class name="Regression.TC006"/>
     </classes>
   </test> <!-- Test -->
+  
+   <test thread-count="5" name="Smoke">
+    <classes>
+      <class name="Smoke.TC002"/>
+      <class name="Smoke.TestXpath"/>
+    </classes>
+  </test><!-- Test -->
+  
+  
 </suite> <!-- Suite -->
+
