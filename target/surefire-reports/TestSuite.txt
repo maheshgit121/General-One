@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 39.901 s <<< FAILURE! - in TestSuite
 Regression.TC006.signup  Time elapsed: 20.506 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
@@ -110,3 +111,6 @@ Driver info: driver.version: ChromeDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
+=======
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.089 s - in TestSuite
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f

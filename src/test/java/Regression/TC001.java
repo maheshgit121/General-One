@@ -16,8 +16,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+<<<<<<< HEAD
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+=======
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
@@ -28,6 +31,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class TC001 {
 	
 	public static Logger log;
+<<<<<<< HEAD
 	public  WebDriver d;
 	public static ExtentReports extent = new ExtentReports();
 	public static ExtentSparkReporter spark; 
@@ -66,12 +70,26 @@ public class TC001 {
 	@BeforeTest
 	public void reportname()
 	{
+=======
+	public static WebDriver d;
+	public static ExtentReports extent = new ExtentReports();
+	public static ExtentSparkReporter spark; 
+	public static ExtentTest et;
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");  
+	LocalDateTime now = LocalDateTime.now(); 
+	
+
+	@BeforeTest
+	public void reportname()
+	{
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
 		String DateFormat=dtf.format(now);
 		spark = new ExtentSparkReporter("reports/ReportOn"+DateFormat+".html"); //creates html report to print the logs created by extent reports
 		extent.attachReporter(spark);
 		extent.setSystemInfo("OS", "Windows 10");
 		extent.setSystemInfo("Test Type", "Regression");
 		extent.setSystemInfo("Date:", now.toString());
+<<<<<<< HEAD
 		
 		log = LogManager.getLogger();
 		System.setProperty("file.name", "regression");
@@ -121,6 +139,27 @@ public class TC001 {
 		log = LogManager.getLogger(c);
 		System.setProperty("file.name", "regression");
 	}
+=======
+	}
+	
+	public void set() throws InterruptedException
+    {   
+    	ChromeOptions options = new ChromeOptions();
+    	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
+    	d= new ChromeDriver(options);
+    	d.get("https://automationexercise.com/login");
+    	//d.get("https://devwcs3.frontgate.com/personalized-recipe-board/1107822?searchTerm=159147");
+    	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+    	d.manage().window().maximize();
+    	log.debug("Setup is successfull");
+    	
+    }
+	 
+	public void setlogger(String c)
+	{
+		log = LogManager.getLogger(c);
+	}
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
 	
 	public String screenshotone(WebDriver d)
 	{

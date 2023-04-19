@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="9" total="23" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -78,16 +79,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+<testng-results ignored="3" total="11" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-24T13:23:13 IST" name="Suite" finished-at="2023-01-24T13:23:33 IST" duration-ms="19765">
+    <groups>
+    </groups>
+    <test started-at="2023-01-24T13:23:13 IST" name="Test" finished-at="2023-01-24T13:23:33 IST" duration-ms="19765">
+      <class name="Regression.TC006">
+        <test-method signature="signup()[pri:0, instance:Regression.TC006@7c541c15]" started-at="2023-01-24T13:23:24 IST" name="signup" finished-at="2023-01-24T13:23:33 IST" duration-ms="9409" status="PASS">
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
       </class> <!-- Regression.TC006 -->
       <class name="Regression.TC004">
+<<<<<<< HEAD
         <test-method signature="main1()[pri:0, instance:Regression.TC004@459f7aa3]" started-at="2023-04-12T12:52:07 IST" name="main1" finished-at="2023-04-12T12:52:07 IST" duration-ms="11" status="PASS">
+=======
+        <test-method signature="main1()[pri:0, instance:Regression.TC004@66b7550d]" started-at="2023-01-24T13:23:15 IST" name="main1" finished-at="2023-01-24T13:23:15 IST" duration-ms="13" status="PASS">
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main1 -->
       </class> <!-- Regression.TC004 -->
+<<<<<<< HEAD
       <class name="Regression.TC005">
         <test-method signature="print()[pri:0, instance:Regression.TC005@7cc586a8]" started-at="2023-04-12T12:52:07 IST" name="print" finished-at="2023-04-12T12:52:07 IST" duration-ms="35" status="PASS">
           <reporter-output>
@@ -96,11 +113,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
       </class> <!-- Regression.TC005 -->
       <class name="Regression.TestXpath">
         <test-method signature="main1()[pri:0, instance:Regression.TestXpath@7db534f2]" started-at="2023-04-12T12:52:07 IST" name="main1" finished-at="2023-04-12T12:52:21 IST" duration-ms="14486" status="PASS">
+=======
+      <class name="Regression.TestXpath">
+        <test-method signature="main1()[pri:0, instance:Regression.TestXpath@3543df7d]" started-at="2023-01-24T13:23:15 IST" name="main1" finished-at="2023-01-24T13:23:24 IST" duration-ms="8718" status="PASS">
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main1 -->
       </class> <!-- Regression.TestXpath -->
       <class name="Regression.TC002">
+<<<<<<< HEAD
         <test-method is-config="true" signature="initialisation()[pri:0, instance:Regression.TC002@4816c290]" started-at="2023-04-12T12:52:05 IST" name="initialisation" finished-at="2023-04-12T12:52:05 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -126,16 +148,44 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           </reporter-output>
         </test-method> <!-- logtest3 -->
         <test-method signature="logtest4()[pri:0, instance:Regression.TC002@4816c290]" started-at="2023-04-12T12:52:06 IST" name="logtest4" finished-at="2023-04-12T12:52:06 IST" duration-ms="16" status="PASS">
+=======
+        <test-method is-config="true" signature="reportname()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:13 IST" name="reportname" finished-at="2023-01-24T13:23:14 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportname -->
+        <test-method is-config="true" signature="setlog()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:14 IST" name="setlog" finished-at="2023-01-24T13:23:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setlog -->
+        <test-method signature="logtest()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:14 IST" name="logtest" finished-at="2023-01-24T13:23:14 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logtest -->
+        <test-method signature="logtest2()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:14 IST" name="logtest2" finished-at="2023-01-24T13:23:14 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logtest2 -->
+        <test-method signature="logtest3()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:14 IST" name="logtest3" finished-at="2023-01-24T13:23:14 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logtest3 -->
+        <test-method signature="logtest4()[pri:0, instance:Regression.TC002@774698ab]" started-at="2023-01-24T13:23:14 IST" name="logtest4" finished-at="2023-01-24T13:23:14 IST" duration-ms="22" status="PASS">
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest4 -->
       </class> <!-- Regression.TC002 -->
       <class name="Regression.TC003">
+<<<<<<< HEAD
         <test-method signature="main2()[pri:0, instance:Regression.TC003@4e4efc1b]" started-at="2023-04-12T12:52:06 IST" name="main2" finished-at="2023-04-12T12:52:07 IST" duration-ms="757" status="PASS">
+=======
+        <test-method signature="main2()[pri:0, instance:Regression.TC003@2ccca26f]" started-at="2023-01-24T13:23:14 IST" name="main2" finished-at="2023-01-24T13:23:15 IST" duration-ms="881" status="PASS">
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main2 -->
       </class> <!-- Regression.TC003 -->
+<<<<<<< HEAD
     </test> <!-- Regression -->
     <test started-at="2023-04-12T12:52:42 IST" name="Smoke" finished-at="2023-04-12T12:52:44 IST" duration-ms="1880">
       <class name="Smoke.TestXpath">
@@ -229,5 +279,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
         </test-method> <!-- logtest4 -->
       </class> <!-- Smoke.TC002 -->
     </test> <!-- Smoke -->
+=======
+    </test> <!-- Test -->
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
   </suite> <!-- Suite -->
 </testng-results>

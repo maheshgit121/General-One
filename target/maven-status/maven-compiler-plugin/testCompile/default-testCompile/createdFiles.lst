@@ -1,6 +1,14 @@
 Regression\TC004.class
+<<<<<<< HEAD
 Regression\TestXpath.class
 Regression\TC005.class
 Regression\TC001.class
 Regression\TC002.class
 Regression\TC003.class
+=======
+Regression\TC001.class
+Regression\TC002.class
+Regression\TC003.class
+Regression\TestXpath.class
+Regression\TC005.class
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f

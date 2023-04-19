@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Regression(failed)" verbose="0">
     <classes>
+<<<<<<< HEAD
       <class name="Regression.TC006">
         <methods>
           <include name="initialisation"/>
@@ -20,6 +21,18 @@
           <include name="main1"/>
         </methods>
       </class> <!-- Smoke.TestXpath -->
+=======
+      <class name="Regression.TC002">
+        <methods>
+          <include name="logtest4"/>
+          <include name="logtest3"/>
+          <include name="reportname"/>
+          <include name="logtest"/>
+          <include name="setup"/>
+          <include name="logtest2"/>
+        </methods>
+      </class> <!-- Regression.TC002 -->
+>>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
     </classes>
   </test> <!-- Smoke(failed) -->
 </suite> <!-- Failed suite [Suite] -->
