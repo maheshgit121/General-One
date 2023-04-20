@@ -1,8 +1,14 @@
 package Regression;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,6 +24,8 @@ public class TC006 extends TC001 {
 		
 		this.setlogger("TC006.class");
 		this.set();
+		Actions act = new Actions(d);
+		JavascriptExecutor js = (JavascriptExecutor)d;
 		
 		String DateFormatName=dtf.format(now);
 		d.findElement(By.xpath("//input[@data-qa='signup-name']")).sendKeys("User"+DateFormatName);
@@ -46,8 +54,15 @@ public class TC006 extends TC001 {
         d.findElement(By.xpath("//input[@data-qa='city']")).sendKeys("Bangalore");
         d.findElement(By.xpath("//input[@data-qa='zipcode']")).sendKeys("560050");
         d.findElement(By.xpath("//input[@data-qa='mobile_number']")).sendKeys("9880446115");
-        d.findElement(By.xpath("//button[@data-qa='create-account']")).click();
-        
+        WebElement createAccount = d.findElement(By.xpath("//button[@data-qa='create-account']"));
+       // d.findElement(By.xpath("//button[@data-qa='create-account']")).click();
+        js.executeScript("arguments[0].scrollIntoView();", createAccount);
+       act.moveToElement(createAccount);
+       WebDriverWait wait = new WebDriverWait(d,Duration.ofSeconds(20));
+       wait.until(ExpectedConditions.visibilityOf(createAccount));
+        //Thread.sleep(3000);
+        js.executeScript("arguments[0].click();", createAccount);
+        //createAccount.click();
         String txt = d.findElement(By.xpath("//h2[@data-qa='account-created']")).getText();
         
         Assert.assertEquals(txt, "ACCOUNT CREATED!");
@@ -59,8 +74,7 @@ public class TC006 extends TC001 {
 		
 		this.quit();
         
-        
-		
+       
 		
 	}
 

@@ -6,10 +6,7 @@
       <class name="Regression.TC002"/>
       <class name="Regression.TC003"/>
       <class name="Regression.TC004"/>
-<<<<<<< HEAD
       <class name="Regression.TC005"/>
-=======
->>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
        <class name="Regression.TestXpath"/>
       <class name="Regression.TC006"/>
     </classes>

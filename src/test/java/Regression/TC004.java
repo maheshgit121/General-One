@@ -32,11 +32,7 @@ public class TC004 extends TC001 {
 		}
 		
 		try {
-<<<<<<< HEAD
 			String s = "I am a bad boy";
-=======
-			String s = "I am a good boy";
->>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
 			char[] c = s.toCharArray();
 			for(char c1 : c)
 			{

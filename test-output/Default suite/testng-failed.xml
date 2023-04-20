@@ -5,15 +5,9 @@
     <classes>
       <class name="Regression.TC006">
         <methods>
-<<<<<<< HEAD
           <include name="initialisation"/>
           <include name="signup"/>
           <include name="reportname"/>
-=======
-          <include name="signup"/>
-          <include name="reportname"/>
-          <include name="setup"/>
->>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
         </methods>
       </class> <!-- Regression.TC006 -->
     </classes>

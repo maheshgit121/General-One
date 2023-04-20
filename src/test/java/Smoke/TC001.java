@@ -45,6 +45,7 @@ public class TC001 {
 	public void set() throws InterruptedException
     {   
     	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--remote-allow-origins=*");
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
     	d= new ChromeDriver(options);
     	d.get("https://automationexercise.com/login");

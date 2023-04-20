@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 I am a bad boy
-=======
-I am a good boy
->>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f

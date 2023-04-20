@@ -95,15 +95,7 @@ public class TestXpath extends TC001 {
     	this.quit();*/
     	
     	TestXpath t = new TestXpath();
-    	t.setlogger(this.getClass().getName());
     	t.set();
-<<<<<<< HEAD
-=======
-    	t.login();
-    	//t.fileUploadTest();
-    	//t.JavaScriptExecutorTest();
-    	t.VerifyLoginError();
->>>>>>> 3d413393775ad3b549a594457fc0da7909d8661f
     	t.quit();
     	
     	
